@@ -5,15 +5,27 @@
       src="https://brand-1311379785.cos.ap-shanghai.myqcloud.com/icon32.png"
     />
     <p class="text">幻场</p>
-    <div class="list" @click="isList=!isList">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" width="30" height="30" class="text_icon"><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg>
+    <div class="list" @click="isList = !isList">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
+        viewbox="0 0 24 24"
+        width="30"
+        height="30"
+        class="text_icon"
+      >
+        <path
+          d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+        ></path>
+      </svg>
     </div>
   </div>
   <div v-if="isList" class="page">
-  <div class="box">
-	  <div class="li"><a href="/news">最新资讯</a></div>
-	  <div class="li"><a href="/updates">近期更新</a></div>
-  </div>
+    <div class="box">
+      <div class="li"><a href="/news">最新资讯</a></div>
+      <div class="li"><a href="/updates">近期更新</a></div>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -29,7 +41,7 @@
   width: 100vw;
   height: 50px;
   background-color: #fff;
-  color: #0B242B;
+  color: #0b242b;
   display: flex;
   align-items: center;
 }
@@ -49,17 +61,17 @@
 }
 .page {
   position: absolute;
-  top: 50px; 
+  top: 50px;
   width: 100vw;
   height: 100vh;
   background: #fff;
   z-index: 999;
 }
 .box {
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   row-gap: 25px;
 }
 .li {
@@ -72,6 +84,6 @@
 }
 </style>
 <script setup lang="ts">
-import {ref} from 'vue';
-var isList=ref(false)
+import { ref } from "vue";
+var isList = ref(false);
 </script>
