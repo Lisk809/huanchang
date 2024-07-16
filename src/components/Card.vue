@@ -1,24 +1,27 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>{{ msg }}</h1>
 
   <div class="card">
     <div class="downloads">
-      <button class="download" type="button" @click="">
-        <a href="https://apps.apple.com/cn/app/id1610091878" target="_blank"
-          >App Store</a
-        >
+      <button class="download apple" type="button" @click="">
+        <a href="https://apps.apple.com/cn/app/id1610091878" target="_blank">
+		<img class="dlogo" src="https://www.apple.com/favicon.ico" /><p class="atext">App Store</p>
+	</a>
       </button>
       <button class="download" type="button" @click="">
         <a
           href="https://l.taptap.cn/FbqHpBUr?channel=rep-rep_mri1mler90h"
           target="_blank"
-          >Tap Tap</a
+          >
+	  <img class="dlogo" src="https://www.taptap.cn/favicon.ico" />
+	  Tap Tap</a
         >
       </button>
     </div>
-    <p><span class="text">幻场</span>, 发现可爱好友！</p>
+    <p>
+    <img class="text" src="/text.png" alt="huanchang"/>
+    , 发现可爱好友！</p>
   </div>
 </template>
 
@@ -27,8 +30,8 @@
   /*display: flex;*/
 }
 .text {
-  color: #0f2c30;
-  font-size: 2em;
+  width: 3em;
+  transform: translateY(6px)
 }
 .downloads {
   display: flex;
@@ -36,6 +39,19 @@
   column-gap: 10px;
 }
 .download {
+  display: flex;                                                        justify-content: center;
+  align-items: center;
   /*border: #999 2px solid;*/
+}
+.atext {
+  display: inline;
+  color: #fff
+}
+.apple {
+  background-color: #0B242B;
+}
+.dlogo {
+  width:20px;
+  transform: translateY(4px)
 }
 </style>

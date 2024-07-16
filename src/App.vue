@@ -6,9 +6,7 @@ import Nav from "./components/Nav.vue";
 <template>
 <Nav />
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/logo.png" class="logo" alt="Vite logo" />
-    </a>
+      <img src="/logo.png" class="logo" alt="Huanchang logo" />
   </div>
   <Card />
   <div class="footer">                                                    <a href="https://beian.miit.gov.cn">沪 ICP 备 2022018614 号 - 1</a>                                                                       </div>
@@ -19,7 +17,7 @@ import Nav from "./components/Nav.vue";
   height: 15em;
   padding: 1.5em;
   will-change: filter;
-  transform: translateX(20px) translateY(40px);
+  transform: translateX(20px) translateY(60px);
   transition: filter 300ms;
 }
 .logo:hover {

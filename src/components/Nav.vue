@@ -11,8 +11,8 @@
   </div>
   <div v-if="isList" class="page">
   <div class="box">
-   <div class="li">最新资讯</div>
-   <div class="li">近期更新</div>
+	  <div class="li"><a href="/news">最新资讯</a></div>
+	  <div class="li"><a href="/updates">近期更新</a></div>
   </div>
   </div>
 </template>
